@@ -1,0 +1,19 @@
+vagrant@virtualbox-ubuntu1604:~/bsa/hands-on-bsa/00-Start$ sudo lxc-ls bsa-bashy --fancy
+NAME      STATE   AUTOSTART GROUPS IPV4       IPV6
+bsa-bashy RUNNING 0         -      10.0.3.238 -
+vagrant@virtualbox-ubuntu1604:~/bsa/hands-on-bsa/00-Start$ sudo lxc-attach --name bsa-bashy
+root@bsa-bashy:/# sudo apt-get update
+Holen:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+OK:2 http://archive.ubuntu.com/ubuntu xenial InRelease
+Holen:3 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]
+Es wurden 204 kB in 0 s geholt (290 kB/s).
+Paketlisten werden gelesen... Fertig
+root@bsa-bashy:/# sudo apt-get install python3
+Paketlisten werden gelesen... Fertig
+Abhängigkeitsbaum wird aufgebaut.
+Statusinformationen werden eingelesen.... Fertig
+»python3« ist bereits die neuste Version (3.5.1-3).
+0 aktualisiert, 0 neu installiert, 0 zu entfernen und 0 nicht aktualisiert.
+root@bsa-bashy:/# exit
+exit
+vagrant@virtualbox-ubuntu1604:~/bsa/hands-on-bsa/00-Start$
